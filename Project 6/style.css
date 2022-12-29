@@ -1,0 +1,99 @@
+
+
+   
+   
+    * {
+        padding: 0px;
+       margin: 0;
+    }
+    
+    body {
+        background-color: #2b2922;
+        color: #FFFFFF;
+        font-family: "Montserrat", sans-serif;
+    }
+    
+    .container {
+        max-width: 70rem;
+        margin-right: 25%;
+        margin-left: 25%;
+    
+    }
+    
+    /* navbar */
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        height: 14vh;
+        align-items: center;
+    
+    }
+    .navbar div img {
+        width: 110px;
+    }
+    .navbar .list {
+        list-style-type: none;
+        display: flex;
+        gap: 40px;
+        font-weight: 200;
+        font-size: 15px;
+        align-items: center;
+    }
+    .navbar .list .list-item:first-child {
+        font-weight: 500;
+    }
+    .navbar .list button {
+        background-color: transparent;
+        border: 1px solid #a08f36;
+        color: #a08f36;
+        padding: 10px 20px;
+        border-radius: 8px;
+        font-weight: 700;
+        cursor: pointer;
+    }
+    
+    /*------------------------- hero section -----------------------*/
+    
+    .hero {
+        display: flex;
+        justify-content: space-between;
+        height: 26vh;
+        align-items: center;
+        margin-top: 20px;
+    }
+    .hero-left h1 {
+        font-size: 3.4rem;
+        line-height: 70px;
+        text-transform: capitalize;
+    }
+    .hero-right p {
+        line-height: 28px;
+    }
+    
+    /*----------------------- banner section --------------------*/
+    .banner {
+        height: 540px;
+    }
+    .banner-container  {
+        position: absolute;
+        min-width: 100%;
+       
+        margin-top: 40px;
+        height: 500px;
+        overflow: hidden;
+    }
+    .banner-container img {
+        width: 50%;
+        height: 500px;
+        position: absolute;
+        display: block;
+        object-fit: cover;
+        object-position: center;
+        
+    }
+    
+    
+
+
+
+

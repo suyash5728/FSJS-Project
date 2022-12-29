@@ -1,0 +1,776 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:400");
+
+html {
+  font-size: 100%;
+} /*16px*/
+
+:root {
+  --color-primary: #f4694c;
+  --bg-black: #000308;
+  --color-white: #fff;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: white;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  line-height: 1.75;
+  color: #000000;
+
+  margin: 0 auto;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 1.5rem 0 1.1rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  line-height: 1.3;
+}
+
+h1 {
+  margin-top: 0;
+  font-size: 3.052rem;
+  text-transform: capitalize;
+}
+
+h2 {
+  font-size: 2.441rem;
+}
+
+h3 {
+  font-size: 1.953rem;
+}
+
+h4 {
+  font-size: 1.563rem;
+}
+
+h5 {
+  font-size: 1.25rem;
+}
+
+small,
+.text_small {
+  font-size: 0.8rem;
+}
+
+li {
+  list-style: none;
+  opacity: 0.8;
+}
+
+li:hover {
+  color: var(--color-primary);
+  transform: scale(1.04);
+  transition: all 0.8s ease;
+}
+
+.btn {
+  background: var(--color-primary);
+  border: none;
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  color: var(--color-white);
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.btn:hover,
+.btn-game:hover {
+  transform: scale(1.05);
+  transition: all 0.8s ease;
+  color: var(--color-primary);
+  background-color: var(--color-white);
+  border: 1px solid var(--color-primary);
+}
+
+.play-btn:hover {
+  transform: scale(1.1);
+  transition: all 0.8s ease;
+  color: var(--color-primary);
+}
+
+/* hero starts */
+/*hero */
+/* for mobile */
+
+#hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("./Assets/Photos/futuristic-bg.png") center/cover;
+  color: var(--color-white);
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  align-items: center;
+  gap: 0.6rem;
+  padding: 1.5rem 0.1rem;
+}
+nav > ul {
+  display: flex;
+  gap: 0.9rem;
+  padding-left: 0;
+}
+.nav-btns {
+  display: flex;
+  gap: 1rem;
+}
+.btn1 {
+  background: none;
+  font-weight: 400;
+}
+
+.hero-bottom {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.hero-left {
+  text-align: center;
+  padding: 0.3rem 0.8rem;
+}
+.hero-left > h1 {
+  margin: 1rem 0;
+  font-size: 1.6rem;
+  font-weight: 900;
+}
+.hero-btns {
+  padding: 1.6rem 0;
+}
+.hero-btn1 {
+  margin-right: 20px;
+}
+.hero-btn2 {
+  background: none;
+  border: 2px solid grey;
+  font-weight: 500;
+}
+.hero-right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hero-rigth-b {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+.hero-rigth-b > h3 {
+  font-size: 1.4rem;
+  padding: 1rem;
+  width: 50%;
+}
+.right-arrow {
+  align-self: end;
+}
+
+/* hero */
+/* for tabs */
+@media only screen and (min-width: 768px) {
+  nav {
+    gap: 4rem;
+  }
+  nav > ul {
+    gap: 1.5rem;
+    margin-right: auto;
+  }
+
+  .hero-bottom {
+    flex-direction: row;
+  }
+
+  .hero-left {
+    width: 35rem;
+    text-align: start;
+  }
+  .hero-left > h1 {
+    font-size: 2.3rem;
+  }
+  .hero-right {
+    justify-self: center;
+  }
+  .hero-rigth-b {
+    gap: 1.5rem;
+  }
+  .hero-rigth-b > h3 {
+    width: 50%;
+  }
+}
+
+@media only screen and (min-width: 1240px) {
+  #hero {
+    padding: 0 100px;
+  }
+
+  nav {
+    gap: 6rem;
+  }
+  nav > ul {
+    gap: 2.5rem;
+    margin-left: 2rem;
+  }
+
+  .hero-bottom {
+    padding-bottom: 2rem;
+  }
+
+  .hero-left {
+    width: 41%;
+    padding-top: 2rem;
+    margin-right: 16rem;
+  }
+  .hero-left > h1 {
+    font-size: 3rem;
+  }
+  .hero-right {
+    width: 40%;
+    margin-top: 8rem;
+  }
+  .hero-rigth-b > h3 {
+    width: 20rem;
+    font-size: 2rem;
+  }
+}
+
+/******** hero end *******/
+
+/* games start */
+/* games  */
+/* for mobile */
+#games {
+  padding: 0.7rem;
+}
+.games-top > h1 {
+  font-size: 1.7rem;
+  text-align: center;
+}
+
+.games-bottom {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 4rem;
+}
+
+.game {
+  width: 18.2rem;
+  height: 24.5rem;
+  display: flex;
+  align-items: flex-end;
+  color: var(--color-white);
+}
+.game:hover {
+  transform: scale(1.06);
+  transition: all 0.8s ease;
+}
+.game-bottom {
+  display: flex;
+  align-items: center;
+  /* width: 100%; */
+  width: 17.6rem;
+  height: 13vh;
+  padding: 0.3rem 0.3rem 1.4rem 0.3rem;
+  background: linear-gradient(rgba(43, 43, 43, 0.8), rgba(42, 42, 42, 0.8));
+}
+.btn-game {
+  background: var(--color-primary);
+  color: var(--color-white);
+  border: none;
+  padding: 1rem 2rem;
+  margin-left: 0.6rem;
+}
+.btn-game3 {
+  /* margin-left: 2rem; */
+}
+
+.stars {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: spac;
+}
+.game1 {
+  background: url("./Assets/Photos/image\ 2.png") center/cover;
+  background-position: 400px;
+}
+.game2 {
+  background: url("./Assets/Photos/image\ 4.png") center/cover;
+}
+.game3 {
+  background: url("./Assets/Photos/image\ 3.png") center/cover;
+}
+.game4 {
+  background: url("./Assets/Photos/Rectangle\ 56.png") center/cover;
+}
+
+.play-btn {
+  margin-bottom: 4rem;
+  margin-top: 6rem;
+}
+
+/* games  */
+/* for tabs */
+
+@media only screen and (min-width: 768px) {
+  .games-top > h1 {
+    font-size: 2rem;
+  }
+  .games-bottom {
+    gap: 2rem;
+  }
+}
+
+/* games  */
+/* for desktop */
+
+@media only screen and (min-width: 768px) {
+  .games-top > h1 {
+    padding: 3rem 18rem;
+    font-size: 3.2rem;
+  }
+}
+
+/****** games end ********/
+
+/* sp-game start */
+/* sp-game */
+/* for mobile */
+#sp-game {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1.5rem 1rem;
+}
+
+.sp-game-left {
+  background: url("./Assets/Photos/Rectangle 57.png") center/cover;
+  height: 40vh;
+  width: 75vw;
+}
+
+.sp-game-right {
+  margin: 1.5rem 0;
+  text-align: center;
+}
+.sp-game-right > h1 {
+  font-size: 1.5rem;
+}
+.sp-game-btns {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+}
+.sp-game-btn {
+  background: var(--color-white);
+  color: var(--color-primary);
+  border: 1px solid var(--color-primary);
+}
+.sp-game-right-p {
+  opacity: 0.7;
+}
+
+/* sp-game */
+/* for tabs */
+
+@media only screen and (min-width: 768px) {
+  .sp-game-left {
+    height: 50vh;
+    width: 80vw;
+  }
+}
+
+/* sp-game */
+/* for desktop */
+
+@media only screen and (min-width: 900px) {
+  #sp-game {
+    margin: 0 100px;
+    flex-direction: row;
+    align-items: center;
+  }
+  .sp-game-left {
+    height: 27rem;
+    width: 46rem;
+    margin: 5rem 5rem 5rem 0;
+  }
+  .sp-game-right > h1 {
+    font-size: 3rem;
+  }
+  .sp-game-right {
+    text-align: left;
+    margin-right: 5rem;
+    width: 40rem;
+  }
+  .sp-game-btns {
+    justify-content: start;
+  }
+}
+
+/* sp-game end*/
+
+/* recommended start */
+/* recommended  */
+/* for mobile */
+#recommended {
+  padding: 0.8rem;
+}
+.recommended-top {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.recommended-top > h1 {
+  font-size: 1.3rem;
+  text-align: center;
+  margin: 1rem auto;
+}
+.rec-btns {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+.rec-btn {
+  padding: 1rem 0.8rem;
+  background: var(--color-primary);
+  border: none;
+}
+.rec-btn1 {
+  background: #ddbfb9;
+}
+.recommended-bottom {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3rem;
+  margin-top: 3rem;
+  margin-bottom: 5rem;
+}
+.game-card {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.game-card:hover {
+  transform: scale(1.04);
+  transition: all 0.8s ease;
+}
+.card-bottom {
+  margin-left: 1rem;
+  width: 300px;
+  text-align: center;
+  align-self: center;
+}
+.card-bottom > h5 {
+  color: var(--color-primary);
+}
+.card-bottom > p {
+  opacity: 0.7;
+}
+
+.card-img1 {
+  background: url("./Assets/Photos/Rectangle\ 75.png") center/cover;
+  width: 300px;
+  height: 350px;
+  align-self: center;
+}
+.card-img2 {
+  background: url("./Assets/Photos/Rectangle\ 76.png") center/cover;
+  width: 300px;
+  height: 350px;
+  align-self: center;
+}
+.card-img3 {
+  background: url("./Assets/Photos/Rectangle\ 77.png") center/cover;
+  width: 300px;
+  height: 350px;
+  align-self: center;
+}
+.card-img4 {
+  background: url("./Assets/Photos/Rectangle\ 78.png") center/cover;
+  width: 300px;
+  height: 350px;
+  align-self: center;
+}
+
+/* recommended  */
+/* for tabs */
+@media only screen and (min-width: 750px) {
+  #recommended {
+    padding: 0 100px;
+  }
+
+  .recommended-top > h1 {
+    font-size: 1.8rem;
+  }
+  .rec-btns {
+    flex-direction: row;
+  }
+  .rec-btn {
+    padding: 1.4rem 1rem;
+  }
+
+  .game-card {
+    flex-direction: row;
+  }
+}
+
+/* recommended  */
+/* for desktop */
+@media only screen and (min-width: 1000px) {
+  .recommended-top {
+    justify-content: space-between;
+  }
+  .recommended-top > h1 {
+    margin: 1rem 0;
+    font-size: 3rem;
+    width: 42rem;
+    text-align: start;
+  }
+  .rec-btn {
+    padding: 1.6rem 1.1rem;
+  }
+  .recommended-bottom {
+    grid-template-columns: 1fr 1fr;
+    /* flex-wrap: wrap; */
+  }
+  .card-bottom {
+    text-align: start;
+  }
+}
+
+/* recommended end */
+
+/* popular start */
+/* popular */
+/* for mobile */
+#popular {
+  background: var(--bg-black);
+  color: var(--color-white);
+  padding-bottom: 2rem;
+}
+.pop-top {
+  text-align: center;
+  padding: 1rem 0;
+}
+.pop-top > h1 {
+  font-size: 1.7rem;
+  line-height: 1;
+}
+.pop-p {
+  font-size: 0.9rem;
+  padding: 1rem;
+  opacity: 0.6;
+  text-align: left;
+}
+.pop-bottom {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+  justify-content: space-evenly;
+  background: url("./Assets/Icons/GAMES\ OF\ THE\ WORLD.svg") no-repeat;
+  background-position-x: 460px;
+  background-position-y: 160px;
+}
+.pop-img1 {
+  width: 18rem;
+}
+.pop-img2 {
+  width: 18rem;
+}
+.pop-img3 {
+  width: 18rem;
+}
+
+.pop-img1:hover,
+.pop-img2:hover,
+.pop-img3:hover {
+  transform: scale(1.05);
+  transition: all 0.8s ease;
+}
+
+/* popular */
+/* for tabs */
+@media only screen and (min-width: 768px) {
+  .pop-top {
+    width: 70%;
+    margin: 1rem auto;
+  }
+  .pop-top > h1 {
+    font-size: 2.1rem;
+  }
+  .pop-p {
+    font-size: 1rem;
+  }
+}
+
+/* popular */
+/* for desktop */
+@media only screen and (min-width: 1000px) {
+  #popular {
+    position: relative;
+    padding-bottom: 2rem;
+  }
+
+  .pop-top > h1 {
+    font-size: 3rem;
+    position: relative;
+    top: 4rem;
+  }
+  .pop-p {
+    margin: 0 18rem 0 27rem;
+    padding: 0;
+    position: absolute;
+    top: 250px;
+  }
+  .pop-bottom {
+    flex-direction: row;
+    margin-bottom: 2rem;
+  }
+  .pop-img1 {
+    width: 400px;
+  }
+  .pop-img2 {
+    width: 330px;
+    margin-top: 210px;
+  }
+  .pop-img3 {
+    width: 300px;
+    margin-top: 400px;
+  }
+}
+
+/* popular end */
+
+/* gamer start */
+/* gamer */
+/* for mobile */
+#gamer {
+  /* padding: 0 100px; */
+  background: var(--bg-black);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 2rem;
+}
+.gamer-img {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4)),
+    url("./Assets/Photos/Rectangle 606.png") center/cover;
+  color: var(--color-white);
+  text-align: center;
+  line-height: 1;
+}
+.gamer-content {
+  padding: 5rem 2rem;
+}
+
+.gamer-content > h1 {
+  font-size: 1.4rem;
+}
+.gamer-p {
+  opacity: 0.7;
+}
+
+/* gamer */
+/* for tabs */
+
+@media only screen and (min-width: 820px) {
+  #gamer {
+    padding-bottom: 60px;
+  }
+  .gamer-img {
+    width: 88vw;
+    height: 60vh;
+  }
+  .gamer-content {
+    margin: 1rem 14%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+  .gamer-content > h1 {
+    font-size: 2.5rem;
+  }
+  .gamer-p {
+    padding: 0 8rem;
+  }
+}
+
+/* footer start */
+/* footer */
+/* for mobile */
+#footer {
+  background: var(--bg-black);
+  color: var(--color-white);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  line-height: 2.2;
+}
+.footer-ul {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.footer-logo {
+  width: 250px;
+  padding: 2rem 0;
+  align-self: center;
+  text-align: center;
+}
+.footer-logo > p {
+  opacity: 0.7;
+}
+.footer-logo > img {
+  margin-right: 0.8rem;
+}
+
+.footer > ul > li {
+  opacity: 0.7;
+}
+
+/* footer */
+/* for mobile */
+
+@media only screen and (min-width: 768px) {
+  #footer {
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 0 100px;
+  }
+
+  .footer-ul {
+    display: flex;
+  }
+}
+
+/* footer end */
+.footer-end {
+  text-align: center;
+  padding: 1.3rem;
+
+  color: white;
+  background-color: var(--bg-black);
+}
+
+a:hover {
+  color: var(--color-primary);
+}
+a {
+  text-decoration: none;
+  color: white;
+}
